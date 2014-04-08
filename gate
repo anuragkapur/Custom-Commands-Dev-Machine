@@ -1,0 +1,4 @@
+#!/bin/bash
+
+GATE_HOME=/Users/anuragkapur/Tech_Stuff/data/GATE/gate-8.0-SNAPSHOT-build4792-ALL
+$GATE_HOME/bin/gate.sh
