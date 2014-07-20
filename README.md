@@ -1,4 +1,4 @@
-shell-customisations-ak-skynet
-==============================
+Shell Customisations - ak-skynet
+================================
 
 Custom commands configured on my dev machine
