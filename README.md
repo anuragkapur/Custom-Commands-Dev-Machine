@@ -14,4 +14,8 @@ To reflect changes made to the profile file in the existing shell session, ececu
 ```shell
 $ source ~/.profile
 ```
+## Vim settings
 
+```shell
+$ ln -s ~/shell-customisations-ak-skynet/vimrc ~/.vimrc
+```
