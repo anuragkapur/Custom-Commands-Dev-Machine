@@ -1,0 +1,47 @@
+    
+# export PS1="\w \u$ "
+export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=384m"
+ 
+# if JAVA_HOME isn't set, use the following: export JAVA_HOME=$(/usr/libexec/java_home -v 1.6) or export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+# export JAVA_HOME=/Library/Java/Home
+ 
+export BUILD_NUMBER=1
+export JOB_NAME=custom
+ 
+export CATALINA_HOME="/opt/nap-webapp/apache-tomcat-6.0.33"
+export CATALINA_OPTS="-Xmx1024m -XX:MaxPermSize=512m -Dconfig=file://$CATALINA_HOME/conf/Catalina/localhost"
+ 
+export CLICOLOR="xterm-color"
+ 
+# this is for mounting the images of the products, will require password.
+#if ! test -d /opt/www/NetAPorter/products/archive
+#then
+#    SPIKE=imgproc01.wtf.nap
+#    if ping -c 1 $SPIKE ; then
+#        echo "Mounting missing image_resizer directory from $SPIKE.."
+#        sudo mount_nfs -P $SPIKE:/disk/image_resizer/images/readonly/processed /opt/www/NetAPorter/products
+#    else
+#        echo "NOT attempting to mount $SPIKE as it is not reachable"
+#    fi
+#fi
+ 
+# Tomcat
+alias tomcat-start=$CATALINA_HOME/bin/startup.sh
+alias tomcat-stop=$CATALINA_HOME/bin/shutdown.sh
+alias tomcat-profile='/opt/nap-webapp/script/tomcat_profile_ctl start'
+  
+# Apache
+alias apache-start='sudo /opt/nap-webapp/apache2/bin/apachectl start'
+alias apache-stop='sudo /opt/nap-webapp/apache2/bin/apachectl stop'
+alias apache-restart='sudo /opt/nap-webapp/apache2/bin/apachectl restart'
+  
+# Logs
+alias tail-psp="ssh guest@10.3.2.131 'tail -F $CATALINA_HOME/logs/catalina.out'"
+alias tail-tomcat='tail -F /opt/nap-webapp/tomcat-6.0.18/logs/*'
+alias tail-mysql='tail -F /var/log/mysql/mysql.log'
+  
+# Change Website
+alias change-website='sudo /opt/nap-webapp/script/changeWebChannelProject.sh'
+ 
+# patch database
+alias patch-db='/opt/nap-webapp/script/patch_db'

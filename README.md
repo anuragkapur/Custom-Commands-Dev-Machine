@@ -14,6 +14,13 @@ To reflect changes made to the profile file in the existing shell session, ececu
 ```shell
 $ source ~/.profile
 ```
+
+## Using bash profile
+
+```shell
+ln -s ~/shell-customisations-ak-skynet/bash_profile ~/.bash_profile
+```
+
 ## Vim settings
 
 ```shell
