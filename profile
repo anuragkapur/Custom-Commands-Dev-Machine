@@ -24,3 +24,5 @@ source /Users/a.kapur/shell-customisations-ak-skynet/profile-ynap
 
 # Customise bash prompt
 export PS='\u@\Host:\w$ '
+
+source ~/shell-customisations-ak-skynet/git-completion.bash
