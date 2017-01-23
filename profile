@@ -25,4 +25,12 @@ source /Users/a.kapur/shell-customisations-ak-skynet/profile-ynap
 # Customise bash prompt
 export PS='\u@\Host:\w$ '
 
+# Git bash completion
 source ~/shell-customisations-ak-skynet/git-completion.bash
+
+# MySQL
+mysql5_5=/usr/local/opt/mysql\@5.5
+mysql_default=/usr/local/mysql
+export PATH=$mysql5_5/bin:$PATH
+
+
