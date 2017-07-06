@@ -10,10 +10,10 @@ source ~/tech-stuff/shell-customisations-ak-skynet/git-prompt.sh
 export PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\\\$ ";'
 
 # Maven
-#M2_HOME=$HOME/tech-stuff/tools/apache-maven/apache-maven-3.2.5
-#M2=$M2_HOME/bin
-#export PATH=$M2:$PATH
-#export M2_HOME=$M2_HOME
+M2_HOME=~/tech-stuff/tools/apache-maven/apache-maven-3.2.5
+M2=$M2_HOME/bin
+export PATH=$M2:$PATH
+export M2_HOME=$M2_HOME
 
 # CLI customisations
 export CLICOLOR="xterm-color"
