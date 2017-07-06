@@ -33,3 +33,8 @@ source ~/tech-stuff/shell-customisations-ak-skynet/git-completion.bash
 # Terraform
 #terraform=/Users/a.kapur/tech-stuff/tools/terraform/terraform-0_9_1
 #export PATH=$PATH:$terraform
+
+# Gradle
+GRADLE_HOME=~/tech-stuff/tools/gradle/gradle-3.5
+export GRADLE_HOME=$GRADLE_HOME
+export PATH=$GRADLE_HOME/bin:$PATH
