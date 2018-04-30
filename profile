@@ -38,3 +38,17 @@ source ~/tech-stuff/shell-customisations-ak-skynet/git-completion.bash
 GRADLE_HOME=~/tech-stuff/tools/gradle/gradle-3.5
 export GRADLE_HOME=$GRADLE_HOME
 export PATH=$GRADLE_HOME/bin:$PATH
+
+# Spring boot cli
+SPRING_HOME=~/tech-stuff/tools/spring-boot-cli/spring-1.5.4.RELEASE
+export SPRING_HOME=$SPRING_HOME
+export PATH=$SPRING_HOME/bin:$PATH
+
+# PostreSQL
+export POSTGRESQL_HOME=/Library/PostgreSQL/9.6
+export PGDATA=/Library/PostgreSQL/9.6/data
+export PATH=$POSTGRESQL_HOME/bin:$PATH
+
+# MongoDB
+export MONGO_HOME=/Users/anuragkapur/tech-stuff/servers/mongodb/mongodb-osx-x86_64-3.2.17
+export PATH=$MONGO_HOME/bin:$PATH
