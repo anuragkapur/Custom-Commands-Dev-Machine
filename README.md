@@ -21,6 +21,16 @@ $ source ~/.profile
 ln -s ~/shell-customisations-ak-skynet/bash_profile ~/.bash_profile
 ```
 
+The bash_profile file is encrypted using ansible vault as it contains sensitive server info that I don't intend
+to make public.
+
+The following commands are used to decrypt and encrypt. Manual care is needed to remember to encrypt the file before
+pushing to github. Also, the file needs to be decrypted before using with the OS.
+```shell
+ansible-vault encrypt bash_profile
+ansible-vault decrypt bash_profile
+```
+
 ## Vim settings
 
 ```shell
