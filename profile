@@ -31,8 +31,8 @@ source ~/tech-stuff/shell-customisations-ak-skynet/git-completion.bash
 #export PATH=$mysql/bin:$PATH
 
 # Terraform
-#terraform=/Users/a.kapur/tech-stuff/tools/terraform/terraform-0_9_1
-#export PATH=$PATH:$terraform
+terraform=~/tech-stuff/tools/terraform/terraform-0_11_11
+export PATH=$PATH:$terraform
 
 # Gradle
 GRADLE_HOME=~/tech-stuff/tools/gradle/gradle-3.5
@@ -52,3 +52,22 @@ export PATH=$POSTGRESQL_HOME/bin:$PATH
 # MongoDB
 export MONGO_HOME=/Users/anuragkapur/tech-stuff/servers/mongodb/mongodb-osx-x86_64-3.2.17
 export PATH=$MONGO_HOME/bin:$PATH
+
+# Neo4j
+export NEO4J_HOME=/Users/anuragkapur/tech-stuff/servers/neo4j/neo4j-community-3.3.9
+export PATH=$NEO4J_HOME/bin:$PATH
+
+# K8s
+alias kb='kubectl'
+
+# Elasticsearch
+ELASTICSEARCH_HOME=/Users/anuragkapur/tech-stuff/servers/elasticsearch/elasticsearch-7.1.1
+export PATH=$ELASTICSEARCH_HOME/bin:$PATH
+
+# Zzish profile
+source /Users/anuragkapur/tech-stuff/workspace/zzish/platform-aliases/aliases_config_local
+source /Users/anuragkapur/.zzish_aws_keys
+
+# EKS Workshop
+export ROLE_NAME=eksctl-ak-eks-playground-nodegrou-NodeInstanceRole-1Q9UUDTY4U3DS
+export INSTANCE_PROFILE_ARN=arn:aws:iam::678422363581:instance-profile/eksctl-ak-eks-playground-nodegroup-standard-workers-NodeInstanceProfile-1AWEFUIUVM4NN
