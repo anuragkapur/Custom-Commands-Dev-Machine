@@ -31,7 +31,7 @@ source ~/tech-stuff/shell-customisations-ak-skynet/git-completion.bash
 #export PATH=$mysql/bin:$PATH
 
 # Terraform
-terraform=~/tech-stuff/tools/terraform/terraform-0_11_11
+terraform=~/tech-stuff/tools/terraform/terraform-0_12_18
 export PATH=$PATH:$terraform
 
 # Gradle
@@ -59,15 +59,20 @@ export PATH=$NEO4J_HOME/bin:$PATH
 
 # K8s
 alias kb='kubectl'
+export KUBECONFIG=~/tech-stuff/workspace/ak/aws-infra-as-code/terraform/environments/dev/kubeconfig_dev-eks-cluster
 
 # Elasticsearch
 ELASTICSEARCH_HOME=/Users/anuragkapur/tech-stuff/servers/elasticsearch/elasticsearch-7.1.1
 export PATH=$ELASTICSEARCH_HOME/bin:$PATH
 
 # Zzish profile
-source /Users/anuragkapur/tech-stuff/workspace/zzish/platform-aliases/aliases_config_local
-source /Users/anuragkapur/.zzish_aws_keys
+#source /Users/anuragkapur/tech-stuff/workspace/zzish/platform-aliases/aliases_config_local
+#source /Users/anuragkapur/.zzish_aws_keys
 
-# EKS Workshop
-export ROLE_NAME=eksctl-ak-eks-playground-nodegrou-NodeInstanceRole-1Q9UUDTY4U3DS
-export INSTANCE_PROFILE_ARN=arn:aws:iam::678422363581:instance-profile/eksctl-ak-eks-playground-nodegroup-standard-workers-NodeInstanceProfile-1AWEFUIUVM4NN
+# Matlab Runtime
+DYLD_LIBRARY_PATH=/Applications/MATLAB/MATLAB_Runtime/v97/runtime/maci64:/Applications/MATLAB/MATLAB_Runtime/v97/sys/os/maci64:/Applications/MATLAB/MATLAB_Runtime/v97/bin/maci64:/Applications/MATLAB/MATLAB_Runtime/v97/extern/bin/maci64
+export DYLD_LIBRARY_PATH
+
+# Python
+alias python=/usr/local/bin/python3
+alias pip=/Library/Frameworks/Python.framework/Versions/3.8/bin/pip3
