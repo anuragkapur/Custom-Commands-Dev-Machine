@@ -74,7 +74,9 @@ DYLD_LIBRARY_PATH=/Applications/MATLAB/MATLAB_Runtime/v97/runtime/maci64:/Applic
 export DYLD_LIBRARY_PATH
 
 # Python
-PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
-export PATH
-alias python=/usr/local/bin/python3
-alias pip=/Library/Frameworks/Python.framework/Versions/3.8/bin/pip3
+#PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
+#export PATH
+#alias python=/usr/local/bin/python3
+alias python=/usr/bin/python
+#alias pip=/Library/Frameworks/Python.framework/Versions/3.8/bin/pip3
+alias pip=/usr/local/bin/pip2.7

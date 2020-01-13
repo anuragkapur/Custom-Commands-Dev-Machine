@@ -27,3 +27,19 @@ alias ssh-tunnel-bcg-mc-stage1data-db='ssh -L 5433:mc-stage1data-gdm-pri-rds.cvf
 alias ssh-tunnel-bcg-mc-stage4-optimisation-db='ssh -L 5433:mc-stage4-gdm-optimization-rds.cvfbxufadjuj.eu-central-1.rds.amazonaws.com:5432 fseadmin@52.59.144.56'
 alias ssh-tunnel-bcg-mc-sm-prod2-db='ssh -L 27018:192.168.15.84:27017 fseadmin@52.58.173.227'
 alias ssh-tunnel-bcg-mc-auth-dev02-db='ssh -L 5433:mc-auth-server-dev02.cgk1q5ux7kkt.eu-central-1.rds.amazonaws.com:5432 fseadmin@52.29.182.190'
+# added by Miniconda3 4.7.12 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/anuragkapur/opt/miniconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/Users/anuragkapur/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/anuragkapur/opt/miniconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/Users/anuragkapur/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
