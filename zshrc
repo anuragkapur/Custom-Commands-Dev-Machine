@@ -12,7 +12,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Java
 jdk8=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
-export JAVA_HOME=$jdk8
+jdk11=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
+export JAVA_HOME=$jdk11
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Maven
@@ -67,13 +68,29 @@ export PATH=$ELASTICSEARCH_HOME/bin:$PATH
 #source /Users/anuragkapur/.zzish_aws_keys
 
 # Matlab Runtime
-DYLD_LIBRARY_PATH=/Applications/MATLAB/MATLAB_Runtime/v97/runtime/maci64:/Applications/MATLAB/MATLAB_Runtime/v97/sys/os/maci64:/Applications/MATLAB/MATLAB_Runtime/v97/bin/maci64:/Applications/MATLAB/MATLAB_Runtime/v97/extern/bin/maci64
-export DYLD_LIBRARY_PATH
+#DYLD_LIBRARY_PATH=/Applications/MATLAB/MATLAB_Runtime/v97/runtime/maci64:/Applications/MATLAB/MATLAB_Runtime/v97/sys/os/maci64:/Applications/MATLAB/MATLAB_Runtime/v97/bin/maci64:/Applications/MATLAB/MATLAB_Runtime/v97/extern/bin/maci64
+#export DYLD_LIBRARY_PATH
 
 # Python
 #PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 #export PATH
 #alias python=/usr/local/bin/python3
-alias python=/usr/bin/python
+#alias python=/usr/bin/python
 #alias pip=/Library/Frameworks/Python.framework/Versions/3.8/bin/pip3
-alias pip=/usr/local/bin/pip2.7
+#alias pip=/usr/local/bin/pip2.7
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/anuragkapur/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/anuragkapur/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/anuragkapur/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/anuragkapur/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
