@@ -13,11 +13,11 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # Java
 jdk8=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 jdk11=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
-export JAVA_HOME=$jdk11
+export JAVA_HOME=$jdk8
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Maven
-M2_HOME=~/tech-stuff/tools/apache-maven/apache-maven-3.2.5
+M2_HOME=~/tech-stuff/tools/apache-maven/apache-maven-3.6.3
 M2=$M2_HOME/bin
 export PATH=$M2:$PATH
 export M2_HOME=$M2_HOME
